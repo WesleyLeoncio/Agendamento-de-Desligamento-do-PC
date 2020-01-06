@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="281.0" prefWidth="383.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modelo.controller.FXMLDesligarController">
+   <children>
+      <Button fx:id="bt_desligar" layoutX="36.0" layoutY="165.0" mnemonicParsing="false" onAction="#btDesligar" prefHeight="73.0" prefWidth="315.0" style="-fx-background-color: red;" styleClass="Desligar" text="Desligar" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font></Button>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="144.0" prefWidth="360.0" style="-fx-background-color: #000;">
+         <children>
+            <TextField fx:id="txt_tempo" editable="false" layoutX="25.0" layoutY="41.0" prefHeight="88.0" prefWidth="55.0" text="0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Button fx:id="bt_horas_M" layoutX="80.0" layoutY="41.0" mnemonicParsing="false" onAction="#horasMais" prefHeight="44.0" prefWidth="35.0" text="+">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="bt_horas_MN" layoutX="80.0" layoutY="85.0" mnemonicParsing="false" onAction="#horasMenos" prefHeight="44.0" prefWidth="35.0" text="-">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="38.0" layoutY="11.0" text="Horas " textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="147.0" layoutY="11.0" text="Minutos" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="bt_minutos_MN" layoutX="193.0" layoutY="85.0" mnemonicParsing="false" onAction="#minutosMenos" prefHeight="44.0" prefWidth="35.0" text="-">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="bt_minutos_M" layoutX="193.0" layoutY="41.0" mnemonicParsing="false" onAction="#minutosMais" prefHeight="44.0" prefWidth="35.0" text="+">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txt_tempo1" editable="false" layoutX="138.0" layoutY="41.0" prefHeight="88.0" prefWidth="55.0" text="0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="246.0" layoutY="11.0" text="Segundos" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="bt_segundos_MN" layoutX="302.0" layoutY="85.0" mnemonicParsing="false" onAction="#segundosMenos" prefHeight="44.0" prefWidth="35.0" text="-">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="bt_segundos_M" layoutX="302.0" layoutY="41.0" mnemonicParsing="false" onAction="#segundosMais" prefHeight="44.0" prefWidth="35.0" text="+">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txt_tempo2" editable="false" layoutX="247.0" layoutY="41.0" prefHeight="88.0" prefWidth="55.0" text="0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <Label layoutX="136.0" layoutY="57.0" text=":" textFill="WHITE">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="247.0" layoutY="56.0" text=":" textFill="WHITE">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
